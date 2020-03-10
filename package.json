@@ -1,0 +1,26 @@
+{
+  "name": "@abdulghani/combinereducers",
+  "version": "1.0.1",
+  "description": "lightweight combinereducer function for reducers",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reducer",
+    "combine",
+    "combinereducer",
+    "combinereducers",
+    "redux",
+    "usereducer"
+  ],
+  "author": "Abdul Ghani (http://abdul-ghani.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-preset-minify": "^0.5.1"
+  }
+}

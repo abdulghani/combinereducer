@@ -1,19 +1,35 @@
 # combineReducers function
-this is a lightweight combineReducers function for reducers.
+
+this is a lightweight combineReducers function for reducers. works with either `redux` or `useReducer`.
+
+# installation
+
+yarn
+
+```
+yarn add @abdulghani/combinereducer
+```
+
+npm
+
+```
+npm install @abdulghani/combinereducer
+```
 
 # usage
+
 ```javascript
-  import combineReducers from "@abdulghani/combinereducers";
-  import { reducerOne, reducerTwo } from "somewhere";
-  
-  const combinedReducers = combineReducers({
-    page: reducerOne,
-    data: reducerTwo
-  });
+import combineReducer from "@abdulghani/combinereducer";
+import { reducerOne, reducerTwo } from "somewhere";
 
-  const MyApp = () => {
-    const [state, dispatch] = useReducer(combinedReducers);
+const combinedReducers = combineReducer({
+  page: reducerOne,
+  data: reducerTwo
+});
 
-    // render
-  }
+const MyApp = () => {
+  const [state, dispatch] = useReducer(combinedReducers);
+
+  // render
+};
 ```

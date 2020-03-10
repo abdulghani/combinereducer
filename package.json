@@ -4,7 +4,7 @@
   "description": "lightweight combinereducer function for reducers",
   "main": "./build/index.js",
   "scripts": {
-    "build": "babel ./src --out-dir ./build",
+    "build": "babel ./src --out-dir ./build --extensions \".ts,.tsx\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +21,7 @@
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.8.3",
     "babel-preset-minify": "^0.5.1"
   }
 }

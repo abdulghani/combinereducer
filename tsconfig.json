@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./build",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true
+  },
+  "include": ["./src"]
+}

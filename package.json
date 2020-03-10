@@ -1,11 +1,11 @@
 {
   "name": "@abdulghani/combinereducer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "lightweight combinereducer function for reducers",
   "homepage": "https://github.com/abdulghani/combinereducer",
   "main": "./build/index.js",
   "scripts": {
-    "build": "babel ./src --out-dir ./build --extensions \".ts,.tsx\"",
+    "build": "rm -rf ./build && babel ./src --out-dir ./build --extensions \".ts,.tsx\" && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,6 +23,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.8.3",
-    "babel-preset-minify": "^0.5.1"
+    "babel-preset-minify": "^0.5.1",
+    "typescript": "^3.8.3"
   }
 }

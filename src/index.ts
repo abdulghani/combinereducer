@@ -3,12 +3,11 @@ import { Reducer } from "react";
 
 const combineReducer = (reducers: Reducers): Reducer<any, Action> => {
   return (state: any, action: Action) => {
-    const tempState = { ...state };
+    if (!state) state = {};
     Object.keys(reducers).forEach(key => {
-      tempState[key] = reducers[key](tempState[key], action);
+      state[key] = reducers[key](state[key], action);
     });
-
-    return tempState;
+    return state;
   };
 };
 
